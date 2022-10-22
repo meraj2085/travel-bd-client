@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../../Contexts/UserContext";
 
 const Header = () => {
+  const { user } = useContext(AuthContext);
   return (
     <header className="px-4 py-3 bg-gray-800 text-gray-100">
       <div className="container flex justify-between mx-auto">
